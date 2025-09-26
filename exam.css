@@ -1,0 +1,223 @@
+html {
+  scroll-padding-top: 70px;
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 100%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Sections */
+section {
+  min-height: 90vh;
+  box-sizing: border-box;
+  margin-top: 70px;
+  padding: 1rem;
+}
+
+.exam-section {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px; /* keep content centered */
+  margin: 0 auto;
+  padding: 0 1rem;
+  gap: 4rem;
+}
+
+.left-exam-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.exam-icon {
+  height: 40px;
+}
+
+.exam-upper-section,
+.exam-lower-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.exam-attended {
+  margin-top: 20px;
+  background-color: #c0c7ce;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.exam-box {
+  min-height: 120px;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 15px;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+.exam-box h3 {
+  margin-bottom: 15px;
+}
+
+.right-exam-section {
+  width: 350px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3rem;
+}
+
+.right-exam-section h2 {
+  margin-top: 10px;
+}
+
+.exam-bars {
+  border-radius: 20px;
+  margin: 20px;
+  background-color: azure;
+  padding: 10px 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+.circle {
+  margin: 20px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: conic-gradient(#4F9CFF 75%, #E5E7EB 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.inner {
+  width: 90px;
+  height: 90px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.green1 {
+  background: conic-gradient(#34D399 66%, #E5E7EB 0);
+}
+.orange1 {
+  background: conic-gradient(#F59E0B 33%, #E5E7EB 0);
+}
+
+/* Colors */
+.blue {
+  background: #acd6ff;
+}
+.green {
+  background: #acffae;
+}
+.orange {
+  background: #ffd1a3;
+}
+.purple {
+  background: #efc7ff;
+}
+.yellow {
+  background: rgb(255, 255, 161);
+}
+
+.result-box {
+  background-color: #4F9CFF;
+  text-align: center;
+  width: 250px;
+  height: 50px;
+  border-radius: 8px;
+  color: white;
+  line-height: 50px;
+  font-weight: bold;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  margin-top: 5rem;
+}
+.result-box:hover{
+  transform: translateY(-5px);
+  transition: transform 0.3s ease ;
+}
+
+/* ----------------- Responsive ------------------ */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .exam-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .left-exam-section {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .right-exam-section {
+    width: 100%;
+  }
+
+  .exam-box {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  section {
+    margin-top: 50px;
+    padding: 0.5rem;
+  }
+
+  .exam-section {
+    padding: 0.5rem;
+  }
+
+  .left-exam-section {
+    padding: 10px;
+  }
+
+  .exam-upper-section,
+  .exam-lower-section {
+    grid-template-columns: 1fr; /* stack cards */
+  }
+
+  .exam-box {
+    gap: 15px;
+    padding: 10px;
+    height: 30px;
+  }
+
+  .circle {
+    width: 90px;
+    height: 90px;
+  }
+  .inner {
+    width: 70px;
+    height: 70px;
+    font-size: 16px;
+  }
+
+  .result-box {
+    width: 200px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+  }
+}
