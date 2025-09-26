@@ -78,6 +78,10 @@ section {
 }
 
 .exam-bars {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border-radius: 20px;
   margin: 20px;
   background-color: azure;
@@ -151,6 +155,10 @@ section {
   transform: translateY(-5px);
   transition: transform 0.3s ease ;
 }
+.result-box a{
+text-decoration: none;
+color: #ffffff;
+}
 
 /* ----------------- Responsive ------------------ */
 
@@ -172,9 +180,12 @@ section {
   }
 
   .exam-box {
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
     height: auto;
+  }
+  .result-box{
+    margin: 0;
   }
 }
 
@@ -196,15 +207,13 @@ section {
   .exam-upper-section,
   .exam-lower-section {
     grid-template-columns: 1fr; /* stack cards */
+    
   }
 
   .exam-box {
     gap: 15px;
     padding: 10px;
     height: 30px;
-  }
-  .exam-box img{
-    height: 20px;
   }
 
   .circle {

@@ -335,6 +335,9 @@ h2 {
     margin: 100px 20px;
     width: auto;
   }
+  .nav-items a{
+    display: none;
+  }
 }
 
 /* Mobile */
