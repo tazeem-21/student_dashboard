@@ -203,6 +203,9 @@ section {
     padding: 10px;
     height: 30px;
   }
+  .exam-box img{
+    height: 20px;
+  }
 
   .circle {
     width: 90px;
