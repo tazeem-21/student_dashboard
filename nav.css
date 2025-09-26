@@ -11,9 +11,9 @@
   justify-content: flex-start;
   height: 80px;
   width: 100%;
-  position: sticky;
+  position: fixed;
   top: 0;
-  background: transparent;
+  background: whitesmoke;
   box-shadow: 0 10px 20px rgba(0,0,0,0.5);
   backdrop-filter: blur(10px);
   z-index: 999;
@@ -45,6 +45,7 @@
 }
 
 .navbar-container .navbar-menu{
+
   display: flex;
   text-align: center;
   gap: 1.5rem;

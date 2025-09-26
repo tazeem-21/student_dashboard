@@ -20,8 +20,8 @@ section {
 .exam-section {
   display: flex;
   justify-content: space-between;
-  max-width: 1200px; /* keep content centered */
-  margin: 0 auto;
+  min-width: 1200px; 
+  margin: 0;
   padding: 0 1rem;
   gap: 4rem;
 }
@@ -64,13 +64,11 @@ section {
 }
 
 .right-exam-section {
-  width: 350px;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  gap: 3rem;
 }
 
 .right-exam-section h2 {
@@ -114,6 +112,18 @@ section {
   font-size: 20px;
 }
 
+.result-btn {
+    margin-top: 85px;
+    width: 270px;
+    padding: 1rem;
+    background-color: rgb(48, 119, 249);
+    border-radius: 15px;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    box-shadow: 1px 1px 7px rgb(0, 0, 0, 0.7);
+}
 .green1 {
   background: conic-gradient(#34D399 66%, #E5E7EB 0);
 }
@@ -138,27 +148,8 @@ section {
   background: rgb(255, 255, 161);
 }
 
-.result-box {
-  background-color: #4F9CFF;
-  text-align: center;
-  width: 250px;
-  height: 50px;
-  border-radius: 8px;
-  color: white;
-  line-height: 50px;
-  font-weight: bold;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
-  cursor: pointer;
-  margin-top: 5rem;
-}
-.result-box:hover{
-  transform: translateY(-5px);
-  transition: transform 0.3s ease ;
-}
-.result-box a{
-text-decoration: none;
-color: #ffffff;
-}
+
+
 
 /* ----------------- Responsive ------------------ */
 
@@ -184,9 +175,7 @@ color: #ffffff;
     align-items: flex-start;
     height: auto;
   }
-  .result-box{
-    margin: 0;
-  }
+
 }
 
 /* Mobile */
@@ -226,10 +215,4 @@ color: #ffffff;
     font-size: 16px;
   }
 
-  .result-box {
-    width: 200px;
-    height: 45px;
-    line-height: 45px;
-    font-size: 14px;
-  }
 }
