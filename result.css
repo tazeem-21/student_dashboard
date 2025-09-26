@@ -134,7 +134,7 @@
   top: 10%;
   left: 50%;
   transform: translate(-50%, 0%);
-  padding: 15px 30px;
+  padding: 10px 30px;
   background-color: #4F9CFF;
   color: white;
   border: none;
@@ -188,6 +188,11 @@
   .action-btn {
     width: 100%; /* full width */
     justify-content: center;
+  }
+    .back-btn {
+    width: 100%;           /* full width */
+    font-size: 0.9rem;     /* slightly smaller text */
+    padding: 10px;
   }
 }
 
