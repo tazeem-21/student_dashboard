@@ -1,0 +1,128 @@
+ h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background: #fff;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+
+    select {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    table th, table td {
+      padding: 12px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+
+    table th {
+      background-color: #4F9CFF;
+      color: white;
+    }
+
+    table tr:hover {
+      background-color: #f1f1f1;
+    }
+
+    .progress-container {
+      width: 100%;
+      background: #e0e0e0;
+      border-radius: 10px;
+      overflow: hidden;
+      height: 15px;
+    }
+
+    .progress-bar {
+      height: 15px;
+      border-radius: 10px;
+      text-align: right;
+      padding-right: 5px;
+      color: white;
+      font-size: 12px;
+      line-height: 15px;
+    }
+
+    .total-row {
+      font-weight: bold;
+      background-color: #e0f0ff;
+    }
+
+    /* Tablet & small desktop */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  table th, table td {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .progress-container {
+    height: 12px;
+  }
+
+  .progress-bar {
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .container {
+    padding: 15px;
+  }
+
+  /* Stack each row as a card */
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  table thead {
+    display: none; /* hide headers */
+  }
+
+  tbody tr {
+    background: #fff;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+
+  tbody td {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    font-size: 14px;
+  }
+
+  .progress-container {
+    width: 60%;
+    margin-left: 10px;
+    height: 10px;
+  }
+
+  .progress-bar {
+    font-size: 10px;
+    line-height: 10px;
+  }
+}
