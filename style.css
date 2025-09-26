@@ -20,7 +20,6 @@ section {
   display: flex;
   flex-wrap: wrap;
   min-height: 90vh;
-  gap: 20px;
 }
 
 .profile-container {
@@ -69,7 +68,7 @@ section {
 
 /* Worksheet */
 .worksheet {
-  width: 70%;
+  width: 55%;
   border-radius: 10px;
   margin: 15px 0px;
   background: linear-gradient(135deg, #f3e8ff, #accaff);
@@ -172,7 +171,7 @@ section {
 }
 
 .details {
-  width: 30%;
+  width: 22%;
   min-width: 250px;
   background-color: rgb(255, 226, 226);
   border-radius: 10px;

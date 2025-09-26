@@ -99,3 +99,31 @@ const student = {
       `;
       resultTableBody.appendChild(trTotal);
     });
+
+    const backButton = document.getElementById('backButton');
+
+backButton.addEventListener('click', () => {
+  window.history.back(); // go to previous page
+});
+
+
+const downloadPdfBtn = document.getElementById('downloadBtn');
+
+downloadPdfBtn.addEventListener('click', () => {
+  const selectedExam = examSelect.value;
+  if(!selectedExam) {
+    alert("Please select an exam first!");
+    return;
+  }
+
+  const element = document.getElementById('resultContent'); // element to capture
+  const opt = {
+    margin:       0.5,
+    filename:     `${selectedExam}_Result.pdf`,
+    image:        { type: 'jpeg', quality: 0.98 },
+    html2canvas:  { scale: 2 },
+    jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+  };
+
+  html2pdf().set(opt).from(element).save();
+});
